@@ -1,0 +1,56 @@
+.error-message {
+  width: 100vw;
+  // height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+
+  img {
+    width: 30%;
+  }
+  h2 {
+    margin: 5px;
+    letter-spacing: 0.5px;
+    font-family: "Abel", sans-serif;
+    color: #644c10;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .btn {
+    margin: 10px;
+    border: 1px solid;
+    padding: 8px 20px;
+    border-radius: 6px;
+    letter-spacing: 0.3px;
+    font-size: 0.9rem;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    transition: 0.3s all ease;
+  }
+  .signin-btn {
+    background: #f0c14b;
+  }
+  
+  .create-btn {
+    background: #d8d7d2;
+  }
+
+  
+  .btn:hover,
+  .btn:focus{
+    background: #f0c14b;
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.05) translateY(-1px);
+    // background: #ab9774;
+    border-color: rgb(227, 229, 230);
+  }
+  .btn:active {
+    transform: scale(.9) translateY(1px);
+    background: #ebdcb1;
+    border-color: rgb(227, 229, 230);
+  }
+}

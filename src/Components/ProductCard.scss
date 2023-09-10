@@ -1,0 +1,114 @@
+.product {
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+  padding: 5px 20px;
+  border: 1px solid rgba(181, 181, 181, 0.508);
+  max-width: 16vw;
+  min-width: 200px;
+  // min-height: 300px;
+  //   box-shadow: rgba(164, 162, 162, 0.35) 0px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 10px;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+  }
+  span {
+    margin: 0;
+    font-size: 0.9rem;
+    padding: 3px 0;
+  }
+  p {
+    margin: 0;
+    color: rgb(177, 23, 23);
+    font-size: 1.2rem;
+    margin-top: 10px;
+
+    span {
+      font-size: 0.7rem;
+      color: rgb(86, 77, 77);
+      text-decoration-line: line-through;
+      padding-bottom: 5px;
+    }
+  }
+
+  img {
+    padding: 10px 0;
+    width: 95%;
+    border-radius: 5px;
+    height: 180px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+  }
+
+  button {
+    background: #f0c14b;
+    border: 1px solid;
+    margin: 10px;
+    padding: 8px 0;
+    letter-spacing: 0.3px;
+    font-size: 0.8rem;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      background: #ebdcb1;
+      border-color: rgb(227, 229, 230);
+    }
+  }
+
+  button:hover,
+  button:focus {
+    transform: scale(1.1);
+    background: #d3a738;
+    border-color: rgb(227, 229, 230);
+    transition: all 0.3s ease-in-out;
+    color: #f2f0ec;
+  }
+  button:active {
+    transform: scale(1.1) translateY(3px);
+    background: #d3a738;
+    border-color: rgb(227, 229, 230);
+    transition: all 0.3s ease-in-out;
+  }
+
+  // Media query for mobile
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px 10px;
+    max-width: 15vw;
+    min-width: 140px;
+
+    h3 {
+      font-size: 0.7rem;
+    }
+
+    span {
+      font-size: 0.7rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    img {
+      padding: 10px 0;
+      width: 95%;
+      border-radius: 5px;
+      height: 100px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+    }
+  }
+}
